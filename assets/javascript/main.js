@@ -1,4 +1,4 @@
-// Contributed by: Alyssia Brooke Hall, Annie Salas, Cindy Smith
+// Contributed by: Alyssia Brooke Hall, Annie Salas, Cindy Smith, (Cameron Winney - provided some guidance)
 
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 
 456, 21, 398, 339, 882, 848, 179, 535, 940, 472,
@@ -174,14 +174,13 @@ for(counter14 = 0; counter14 <= sampleArray.length - 1; counter14 += 1) {
 const kata15Heading = document.createElement('h3')
 parentElement.append(kata15Heading)
 kata15Heading.append('Kata 15')
-array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 let sum = 0
 for(counter15 = 0; counter15 <= 20; counter15 += 1) {
-    sum += array[counter15]
-    let newElement = document.createElement ('p')
-    newElement.append(counter15)
-    parentElement.append(newElement)
+    sum += counter15
 }
+    let newElement15 = document.createElement ('p')
+    newElement15.append(sum)
+    parentElement.append(newElement15)
 
 // kata 16
 const kata16Heading = document.createElement('h3')
@@ -190,27 +189,23 @@ kata16Heading.append('Kata 16')
 let added = 0
 for(counter16 = 0; counter16 <= sampleArray.length - 1; counter16 += 1) {
     added += sampleArray[counter16]
-    let newElement = document.createElement ('p')
-    newElement.append(added)
-    parentElement.append(newElement)
 }
+    let newElement16 = document.createElement ('p')
+    newElement16.append(added)
+    parentElement.append(newElement16)
 
 // kata 17
 const kata17Heading = document.createElement('h3')
 parentElement.append(kata17Heading)
 kata17Heading.append('Kata 17')
-for(counter17 = 0; counter17 <= sampleArray.length - 1; counter17 += 1) {
     let newElement = document.createElement ('p')
-    newElement.append(min(sampleArray[counter17]))
+    newElement.append(Math.min(...sampleArray))
     parentElement.append(newElement)
-}
 
 // kata 18
 const kata18Heading = document.createElement('h3')
 parentElement.append(kata18Heading)
 kata18Heading.append('Kata 18')
-for(counter18 = 0; counter18 <= sampleArray.length - 1; counter18 += 1) {
-    let newElement = document.createElement ('p')
-    newElement.append(max(sampleArray[counter18]))
-    parentElement.append(newElement)
-}
+    let newElementOne = document.createElement ('p')
+    newElementOne.append(Math.max(...sampleArray))
+    parentElement.append(newElementOne)
